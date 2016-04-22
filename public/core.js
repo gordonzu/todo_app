@@ -1,4 +1,7 @@
 // public/core.js
+
+'use strict';
+
 var gordonzMeetups = angular.module('gordonzMeetups', []);
 
 function mainController($scope, $http) {
