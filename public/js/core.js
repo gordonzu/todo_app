@@ -1,5 +1,8 @@
-// public/core.js
+// public/js/core.js
+angular.module('gordonzMeetups', ['meetupController', 'meetupService']);
 
+
+/*
 'use strict';
 
 var gordonzMeetups = angular.module('gordonzMeetups', []);
@@ -43,3 +46,6 @@ function mainController($scope, $http) {
     };
 
 }
+*/
+
+

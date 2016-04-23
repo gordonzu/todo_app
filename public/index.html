@@ -21,7 +21,9 @@
     <!-- SPELLS -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
-    <script src="core.js"></script>
+    <script src="js/controllers/main.js"></script>
+    <script src="js/services/meetups.js"></script>
+    <script src="js/core.js"></script>
 
 </head>
 <!-- SET THE CONTROLLER AND GET ALL TODOS -->
@@ -40,7 +42,7 @@
                 <!-- LOOP OVER THE TODOS IN $scope.meetups -->
                 <div class="checkbox" ng-repeat="meetup in meetups">
                     <label>
-                        <input type="checkbox" ng-click="deleteMeetups(meetup._id)"> {{ meetup.name }}
+                        <input type="checkbox" ng-click="deleteMeetup(meetup._id)"> {{ meetup.name }}
                     </label>
                 </div>
 
@@ -58,7 +60,7 @@
                     </div>
 
 					<!-- createToDo() WILL CREATE NEW TODOS -->
-                    <button type="submit" class="btn btn-primary btn-lg" ng-click="createMeetups()">Add</button>
+                    <button type="submit" class="btn btn-primary btn-lg" ng-click="createMeetup()">Add</button>
                 </form>
             </div>
         </div>

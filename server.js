@@ -19,7 +19,6 @@ app.use(methodOverride('X-HTTP-Method-Override'));
 // routes
 require('./app/routes.js')(app);
 
-
 // listen (start app with node server.js) ======================================
 app.listen(8080);
 console.log("App listening on port 8080...");
